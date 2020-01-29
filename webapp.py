@@ -1,5 +1,5 @@
 #-------------------------------------------------------#
-from flask import Flask, render_template,request
+from flask import Flask, render_template,request, jsonify
 from flask_socketio import SocketIO, send
 import eventlet
 # eventlet.monkey_patch()
@@ -24,7 +24,7 @@ def hello_world():
 
 def webappRun():
     print("webapp_working")
-    socketio.run(app, debug=False)
+    socketio.run(app, host='0.0.0.0', port=10001, debug=False)
 
 
 # if __name__ == '__main__':
