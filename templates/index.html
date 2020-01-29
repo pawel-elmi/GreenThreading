@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sockets</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body onload="startTime()">
+    <div class="grid-container">
+
+        <div class="grid-item time">
+            <div id="txt"></div>
+        </div>
+
+        <div class="grid-item model">
+            RET-250(18329-061)
+        </div>
+
+        <div class="grid-item item-1">
+{#            <ul id="messages"></ul>#}
+            <input type="text" id="myMessage">
+            <button id="sendbutton">Send</button>
+        </div>
+
+        <div class="grid-item item-2">
+            <div id="CH1"></div>
+        </div>
+
+        <div class="grid-item item-3">
+            <div id="CH2"></div>
+        </div>
+
+        <div class="grid-item item-4">
+
+        </div>
+
+        <div class="serwis">
+            <button id="serwis">Serwis</button>
+        </div>
+        <div class="login">
+            <button id="login">Login</button>
+        </div>
+        <div class="proces">
+            <button id="proces">Proces</button>
+        </div>
+
+    </div>
+    <script src="static/sockets.js"></script>
+    <script src="static/clock.js"></script>
+
+</body>
+</html>
