@@ -1,8 +1,9 @@
 import CS5523
 import webapp
 import eventlet
-from flask import jsonify
-import json
+# from flask import jsonify
+# import json
+import math
 
 
 dupa = eventlet.greenthread.spawn(webapp.webappRun)
@@ -25,7 +26,12 @@ def printToClient():
     temp = { "CH1": CS5523.TEMPERATURE[0],
              "CH2": CS5523.TEMPERATURE[1],
              "CH3": CS5523.TEMPERATURE[2],
-             "CH4": CS5523.TEMPERATURE[3] }
+             "CH4": CS5523.TEMPERATURE[3],
+             "PidOut": CS5523.pid_output,
+             "P": round(CS5523.pid.PTerm,2),
+             "I": round(CS5523.pid.ITerm,2),
+             "D": round(CS5523.pid.DTerm,2),
+             "Temp_diff": CS5523.TEMP_DIFF}
     webapp.socketio.emit('someEvent', temp)
     print(str(temp))
     

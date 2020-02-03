@@ -8,7 +8,7 @@
 .grid-container
 {
     height: 100vh;
-    border: 10px solid #14a76c;
+    border: 10px solid #000;
     display: grid;
 
     grid-template-rows: 60px 200px 200px 60px;
@@ -28,12 +28,16 @@
 }
 .time
 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
     float: left;
     grid-area: 1/1/1/4;
 }
 
 .model
 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
     align-self:auto;
     grid-area: 1/4/1/7;
 }
@@ -66,4 +70,25 @@
 .proces
 {
     grid-area: 4/6/4/7
+}
+
+#CH1
+{
+     font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+#CH2
+{
+     font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+#CH3
+{
+     font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+#CH4
+{
+     font-size: 70px;
+    font-family: 'Roboto', sans-serif;
 }

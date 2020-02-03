@@ -1,55 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sockets</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <title>MyApp</title>
+  <base href="/static/">  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/node_modules/primeicons/primeicons.css" />
+  <link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/themes/nova-light/theme.css" />
+  <link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/primeng.min.css" />
 </head>
-<body onload="startTime()">
-    <div class="grid-container">
-
-        <div class="grid-item time">
-            <div id="txt"></div>
-        </div>
-
-        <div class="grid-item model">
-            RET-250(18329-061)
-        </div>
-
-        <div class="grid-item item-1">
-{#          <ul id="messages"></ul>#}
-            <input type="text" id="myMessage">
-            <button id="sendbutton">Send</button>
-            <div id="CH1"><h3>ELO</h3></div>
-        </div>
-
-        <div class="grid-item item-2">
-            <div id="CH2"></div>
-        </div>
-
-        <div class="grid-item item-3">
-            <div id="CH3"></div>        
-        </div>
-
-        <div class="grid-item item-4">
-            <div id="CH4"></div>
-        </div>
-
-        <div class="serwis">
-            <button id="serwis">Serwis</button>
-        </div>
-        <div class="login">
-            <button id="login">Login</button>
-        </div>
-        <div class="proces">
-            <button id="proces">Proces</button>
-        </div>
-
-    </div>
-    <script src="static/sockets.js"></script>
-    <script src="static/clock.js"></script>
-
-</body>
+<body>
+  <app-root></app-root>
+<script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="polyfills-es2015.js" type="module"></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule defer></script><script src="vendor-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule defer></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule defer></script></body>
 </html>

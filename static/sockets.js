@@ -39,4 +39,16 @@ $(document).ready(function () {
         socket.send($('#myMessage').val());
         //$('#myMessage').val('');
     })
+    $('#serwis').on('click',function () {
+        socket.send($('#myMessage').val());
+        //$('#myMessage').val('');
+    })
+    $('#login').on('click',function () {
+        socket.send($('#myMessage').val());
+        //$('#myMessage').val('');
+    })
+    $('#proces').on('click',function () {
+        socket.send($('#myMessage').val());
+        //$('#myMessage').val('');
+    })
 })

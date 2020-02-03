@@ -481,14 +481,6 @@ class PrinterThread(Thread):
         while not self.stopped.wait(_PRINTER_THREAD_FREQ):
             Printer()
             if(Error_Connection_Cnt > 0): print("Connection error detected! CNT:", Error_Connection_Cnt)
-
-class PlotingThread(Thread):
-    def __init__(self,event):
-        Thread.__init__(self)
-        self.stopped = event
-    def run(self):
-        while not self.stopped.wait(1):
-            PlotGraph()
             
 
 
